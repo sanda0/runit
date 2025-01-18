@@ -3,6 +3,8 @@
 A utility tool to streamline running multiple project commands effortlessly in a single terminal session! Perfect for managing development environments with ease.
 
 ---
+![image](https://github.com/user-attachments/assets/de4c27bb-f018-4548-b6c6-90b3ec3bc6a3)
+
 
 ## ⚡ Features
 
