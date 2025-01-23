@@ -91,22 +91,17 @@ xrun
 ### 👇 Output Example
 
 ```bash
-  _____             _____ _   
- |  __ \           |_   _| |  
- | |__) |   _ _ __   | | | |_
- |  _  / | | | '_ \  | | | __|
- | | \ \ |_| | | | |_| |_| |_
- |_|  \_\__,_|_| |_|_____|\__|
-                              
-                              
+
+▄   ▄  ▄▄▄ █  ▐▌▄▄▄▄  
+ ▀▄▀  █    ▀▄▄▞▘█   █ 
+▄▀ ▀▄ █         █   █ 
+                        
+
 Configured Commands:
-Laravel ->   php artisan serve
-Vue ->   npm run dev
-Open VsCode ->   code .
+echo ->   echo 'Hello, World!'
 ========================
-Running command: Laravel
-Running command: Vue
-Running command: Open VsCode
+Running command: echo
+[echo] Hello, World!
 ```
 
 ---
