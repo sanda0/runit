@@ -1,4 +1,4 @@
-name: Build and Release RunIt Binary
+name: Build and Release xrun Binary
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
       - name: Build binary
         run: |
           mkdir -p build
-          CGO_ENABLED=0 GOOS=${{ matrix.os }} GOARCH=${{ matrix.arch }} go build -o build/runit-${{ matrix.os }}-${{ matrix.arch }}
+          CGO_ENABLED=0 GOOS=${{ matrix.os }} GOARCH=${{ matrix.arch }} go build -o build/xrun-${{ matrix.os }}-${{ matrix.arch }}
         env:
           GOOS: ${{ matrix.os }}
           GOARCH: ${{ matrix.arch }}

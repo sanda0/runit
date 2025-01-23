@@ -1,9 +1,8 @@
-# ✨ runit ✨
+# ✨ xrun ✨
 
 A utility tool to streamline running multiple project commands effortlessly in a single terminal session! Perfect for managing development environments with ease.
 
 ---
-![image](https://github.com/user-attachments/assets/de4c27bb-f018-4548-b6c6-90b3ec3bc6a3)
 
 
 ## ⚡ Features
@@ -19,17 +18,17 @@ A utility tool to streamline running multiple project commands effortlessly in a
 ### 🔄 Download
 
 ```bash
-curl -s https://api.github.com/repos/sanda0/runit/releases/latest \
+curl -s https://api.github.com/repos/sanda0/xrun/releases/latest \
 | grep "browser_download_url" \
-| grep "runit-linux-amd64" \
+| grep "xrun-linux-amd64" \
 | cut -d '"' -f 4 \
-| xargs curl -L -o runit
+| xargs curl -L -o xrun
 ```
 
 ### 🔧 Install
 
 ```bash
-sudo chmod +x runit && sudo mv runit /usr/bin/runit
+sudo chmod +x xrun && sudo mv xrun /usr/bin/xrun
 ```
 
 ---
@@ -47,14 +46,14 @@ cd /<path_to_your_project>/project
 Run the init command to generate the configuration file:
 
 ```bash
-runit --init
+xrun --init
 ```
 
-You will see a file named `config.runit.json` in your project directory. Open it to edit the configuration.
+You will see a file named `config.xrun.json` in your project directory. Open it to edit the configuration.
 
 ### 🗄 Step 3: Edit Configuration File
 
-Here’s an example of how your `config.runit.json` might look:
+Here’s an example of how your `config.xrun.json` might look:
 
 ```json
 {
@@ -86,7 +85,7 @@ Here’s an example of how your `config.runit.json` might look:
 While in your project directory, simply run:
 
 ```bash
-runit
+xrun
 ```
 
 ### 👇 Output Example
@@ -114,11 +113,11 @@ Running command: Open VsCode
 
 ## 🎉 Enjoy Productivity Boost!
 
-With `runit`, managing your development environment has never been easier! Happy coding! 🚀
+With `xrun`, managing your development environment has never been easier! Happy coding! 🚀
 
 ---
 
 ## 🛠 Feedback and Contributions
 
-Feel free to open issues or submit pull requests. Let’s make `runit` better together! ✨
+Feel free to open issues or submit pull requests. Let’s make `xrun` better together! ✨
 

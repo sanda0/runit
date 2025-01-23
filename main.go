@@ -57,7 +57,7 @@ func createConfigFile(config ConfigFile) error {
 		return err
 	}
 
-	filePath := filepath.Join(workingDir, "config.runit.json")
+	filePath := filepath.Join(workingDir, "config.xrun.json")
 	file, err := os.Create(filePath)
 	if err != nil {
 		return err
@@ -79,7 +79,7 @@ func readConfigFile() (ConfigFile, error) {
 		return ConfigFile{}, err
 	}
 
-	filePath := filepath.Join(workingDir, "config.runit.json")
+	filePath := filepath.Join(workingDir, "config.xrun.json")
 	file, err := os.Open(filePath)
 	if err != nil {
 		return ConfigFile{}, err
@@ -144,19 +144,15 @@ func showCommandsInfo(config ConfigFile) {
 
 func showArtBanner() {
 	banner := `
-  _____             _____ _   
- |  __ \           |_   _| |  
- | |__) |   _ _ __   | | | |_ 
- |  _  / | | | '_ \  | | | __|
- | | \ \ |_| | | | |_| |_| |_ 
- |_|  \_\__,_|_| |_|_____|\__|
-                              
-                              
+▄   ▄  ▄▄▄ █  ▐▌▄▄▄▄  
+ ▀▄▀  █    ▀▄▄▞▘█   █ 
+▄▀ ▀▄ █         █   █ 
+                        
 `
 	fmt.Println(colorize(banner, "cyan"))
 }
 func main() {
-	isInit := flag.Bool("init", false, "Create a new runit configuration")
+	isInit := flag.Bool("init", false, "Create a new xrun configuration")
 	flag.Parse()
 
 	if *isInit {
@@ -171,7 +167,7 @@ func main() {
 			},
 		}
 		createConfigFile(config)
-		fmt.Println("Creating a new runit configuration")
+		fmt.Println("Creating a new xrun configuration")
 	} else {
 		config, err := readConfigFile()
 		if err != nil {
