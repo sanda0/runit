@@ -91,17 +91,20 @@ xrun
 ### 👇 Output Example
 
 ```bash
-
 ▄   ▄  ▄▄▄ █  ▐▌▄▄▄▄  
  ▀▄▀  █    ▀▄▄▞▘█   █ 
 ▄▀ ▀▄ █         █   █ 
                         
 
 Configured Commands:
-echo ->   echo 'Hello, World!'
+Laravel ->   php artisan serve
+Vue ->   npm run dev
+Open VsCode ->   code .
 ========================
-Running command: echo
-[echo] Hello, World!
+Running command: Open VsCode
+Running command: Vue
+Running command: Laravel
+
 ```
 
 ---
